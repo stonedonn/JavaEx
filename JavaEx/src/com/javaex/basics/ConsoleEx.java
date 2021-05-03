@@ -6,6 +6,7 @@ public class ConsoleEx {
 	public static void main(String[] args) {
 		consoleOutputEx();
 		consoleInputEx();
+		
 	}
 	private static void consoleInputEx() {
 		// 팁1. Ctrl + Shift + O
