@@ -22,7 +22,7 @@ public class ConsoleEx {
 		
 		System.out.println("당신의 이름은 " + name + ", 나이는 " + age+"입니다.");
 		
-		// 쓰고 나면 닫아주자!!!!!!!
+		// 쓰고 나면 닫아주자!!!!!!!!
 		scanner.close();
 		
 	}
