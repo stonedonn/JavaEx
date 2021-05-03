@@ -5,9 +5,133 @@ public class ConditionalEx {
 
 	public static void main(String[] args) {
 		//ifElseEx();
-		ifElseEx2();
+		//ifElseEx2();
+		//ifElseEx3();
+		//switchEx();
+		//switchEx2();
+		switchEx3();
 	}
-	private static void ifElseEx2() {
+	
+	private static void switchEx3() {
+		Scanner scanner = new Scanner(System.in);
+		
+		String day = scanner.next();
+		String act = "";
+		
+		// MONDAY ~ THURSDAY : act <- 열공
+		// FRIDAY : act <- 불금
+		// SATURDAY : act <- 주말
+		// SUNDAY : act <- 휴식
+		// 나머지 : act <- ?
+		switch(day) {
+		case "MONDAY":
+		case "TUESDAY":
+		case "WEDNESDAY":
+		case "THURSDAY":
+			act ="열공";
+			break;
+		case "FRIDAY":
+			act ="불금";
+			break;
+		case "SATURDAY":
+			act="주말";
+			break;
+		case "SUNDAY":
+			act="휴식";
+			break;
+		default:
+			act="?";
+		}
+		System.out.println(day + "에는 " + act);
+		
+		scanner.close();
+	}
+	/*
+	private static void switchEx2() {
+		// 월을 입력받아
+		// 1, 3, 5, 7, 8, 10, 12 -> 31일
+		// 4, 6, 9, 11 -> 30일
+		// 2 -> 28일
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("월을 입력: ");
+		
+		int month = scanner.nextInt();
+		
+		switch(month) {
+		case 1:
+		case 3:
+		case 5:
+		case 7:
+		case 8:
+		case 10:
+		case 12:
+			// month == 1 || month == 3 || .....
+			System.out.println("31일");
+			break;
+		case 4:
+		case 6:
+		case 9:
+		case 11:
+			System.out.println("30일");
+			break;
+		case 2:
+			System.out.println("28일");
+			break;
+		default:
+			System.out.println("?");
+		}
+	}
+	*/
+	/*
+	private static void switchEx() {
+		// ifElseEx3를 switch 문으로 만들어 보자
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("과목 1. Java, 2. C, 3. C++, 4. Python");
+		int subject = scanner.nextInt();
+		
+		// switch ~ case 문으로 구현
+		switch(subject) {
+		case 1: // subject == 1
+			System.out.println("R101");
+			break; //break; 잊지말쟈ㅑㅑㅑ
+		case 2: 
+			System.out.println("R202");
+			break;
+		case 3:
+			System.out.println("R303");
+			break;
+		case 4:
+			System.out.println("R404");
+			break;
+		default: // else 문 -> 위에 일치하는 값이 없을 때 수행
+			System.out.println("관리자에게 문의하세요.");
+		}
+		
+		scanner.close();
+	}
+	*/
+	/*
+	private static void ifElseEx3() {
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("과목 1. Java, 2. C, 3. C++, 4. Python");
+		int subject = scanner.nextInt();
+		
+		if( subject == 1 ) {
+			System.out.println("R101");
+		} else if( subject == 2 ) {
+			System.out.println("R202");
+		} else if( subject ==3 ) {
+			System.out.println("R303");
+		} else if ( subject ==4 ) {
+			System.out.println("R404");
+		} else {
+			System.out.println("상담원에게 문의하세요");
+		}
+		
+		scanner.close();
+	}
+	*/
+	/*private static void ifElseEx2() {
 		// 정수 입력
 		// 양수 일때
 		// 짝수, 홀수 출력
@@ -20,7 +144,7 @@ public class ConditionalEx {
 			if (num % 2 == 0) {
 				System.out.println("짝수입니다.");
 			}else {
-				System.out.println("홀수입니다.");
+				System.out.println("홀15수입니다.");
 			}
 		} else {
 			if(num == 0) {
@@ -31,7 +155,9 @@ public class ConditionalEx {
 		}
 		
 		scanner.close();
-	}/*
+	}*/
+	
+	/*
 	private static void ifElseEx() {
 		// 정수를 입력 받아서 
 		// 양수 -> 양수, 음수 -> 음수, 0을 출력
