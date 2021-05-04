@@ -8,8 +8,37 @@ public class LoopEx {
 		//whileEx();
 		//whileEx2();
 		//whileInfinity();
-		doWhileEx();	
+		//doWhileEx();
+		//forLoopEx();
+		continueEx();
 	}
+	private static void continueEx() {
+		// 1~ 20 수 중 2의 배수, 3의 배수를 제외한 나머지를 출력
+		
+		for(int i=0;i<=20;i++) {
+			if(i%2 == 0 || i%3 ==0)
+				continue;
+			System.out.println(i);
+		}
+	}
+	/*
+	private static void forLoopEx() {
+		// 구구표 출력 (for문 버전) -> whileEx2와 비교
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("단을 입력하세요:");
+		int dan = scanner.nextInt();
+		
+		// for(제어변수 초기화; 반복조건 ; 증감식)
+		for(int num =1; num<=9 ; num++) {
+			System.out.println(dan + "*" + num + "=" + (dan * num));
+		}
+		
+		scanner.close();
+	}
+	*/
+	
+	/*
 	private static void doWhileEx() {
 		// while 문의 반복 조건을 뒤에서 확인
 		// 최소 1회는 실행하는 경우 do ~while문 사용
@@ -28,6 +57,7 @@ public class LoopEx {
 		System.out.println("합계: " + total);
 		scanner.close();
 	}
+	*/
 	
 	/*
 	private static void whileInfinity() {
