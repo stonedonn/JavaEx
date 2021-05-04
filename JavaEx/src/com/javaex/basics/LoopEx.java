@@ -10,8 +10,46 @@ public class LoopEx {
 		//whileInfinity();
 		//doWhileEx();
 		//forLoopEx();
-		continueEx();
+		//ontinueEx();
+		//breakEx();
+		randomEx();
 	}
+	
+	private static void randomEx() {
+		// 1~45까지의 난수 6개 출력
+		// for문 버전
+		for(int i=0;i<6;i++) {
+			int randnum = (int)(Math.random() *45) + 1;
+			System.out.print(randnum + " ");
+		}
+		System.out.println(); //개행
+		
+		// while문 버전
+		int i = 0;
+		while(i<6) {
+			System.out.print((int)(Math.random() * 45) +1);
+			System.out.print(" ");
+			i++;
+		}
+		System.out.println();
+	}
+	/*
+	private static void breakEx() {
+		// 6과 14로 동시에 나누어 떨어지는 수 찾기
+		// 어디까지 루프를 돌려야 할 지 판단이 어려움
+		// while이 적합
+		int num = 1;
+		
+		while(true) {
+			if(num % 6 == 0 && num % 14 == 0)
+				break;
+			System.out.print(".");
+			num++;
+		}
+		System.out.println("\n" + num);
+	}*/
+	
+	/*
 	private static void continueEx() {
 		// 1~ 20 수 중 2의 배수, 3의 배수를 제외한 나머지를 출력
 		
@@ -20,7 +58,8 @@ public class LoopEx {
 				continue;
 			System.out.println(i);
 		}
-	}
+	}*/
+	
 	/*
 	private static void forLoopEx() {
 		// 구구표 출력 (for문 버전) -> whileEx2와 비교
