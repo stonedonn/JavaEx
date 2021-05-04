@@ -34,6 +34,8 @@ public class PracticeArray {
 		}
 		avg = (float)(total / 5);
 		System.out.printf("평균은 %.1f 입니다",avg);
+		
+		scanner.close();
 	}
 	private static void problemThird() {
 		char c[] = {'T','H','I','S',' ',
