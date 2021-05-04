@@ -12,9 +12,22 @@ public class LoopEx {
 		//forLoopEx();
 		//ontinueEx();
 		//breakEx();
-		randomEx();
+		//randomEx();
+		practiceLoop();
 	}
-	
+	private static void practiceLoop() {
+		for(int i=2;i<=9;i++) {
+			for(int j=1;j<=9;j++) 
+				System.out.println(i+"*"+j + "= " + i*j);
+		}
+		
+		for(int i=1;i<=6;i++) {
+			for(int j=1;j<=i;j++)
+				System.out.print("*");
+			System.out.println();
+		}
+	}
+	/*
 	private static void randomEx() {
 		// 1~45까지의 난수 6개 출력
 		// for문 버전
@@ -33,6 +46,7 @@ public class LoopEx {
 		}
 		System.out.println();
 	}
+	*/
 	/*
 	private static void breakEx() {
 		// 6과 14로 동시에 나누어 떨어지는 수 찾기
