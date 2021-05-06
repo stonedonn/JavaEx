@@ -1,6 +1,7 @@
 package com.javaex.oop.goods.v2;
 
 // v2. 정보 은닉
+// 정보에 접근할 수 있는 getter/setter 
 public class Goods {
 	//  필드
 	
