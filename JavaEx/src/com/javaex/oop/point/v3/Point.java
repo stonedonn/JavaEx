@@ -1,5 +1,5 @@
 package com.javaex.oop.point.v3;
-
+// 볼륨이 트루면 올려주고 아니면 내려주고
 
 // v2. 생성자
 public class Point {
