@@ -33,7 +33,7 @@ public class WrapperEx {
 		// 언박싱 비교
 		System.out.println("값의 비교(언박싱)" + (i3.intValue() == i4.intValue())); // 값의 비교 -> true
 		// equals 비교
-		System.out.println("값의 비교(equals" + i3.equals(i4));
+		System.out.println("값의 비교(equals)" + i3.equals(i4));
 	}
 
 }
