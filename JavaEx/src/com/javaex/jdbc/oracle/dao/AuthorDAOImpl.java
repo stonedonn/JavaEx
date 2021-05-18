@@ -117,6 +117,7 @@ public class AuthorDAOImpl implements AuthorDAO {
 
 	@Override
 	public boolean delete(Long id) {
+		
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		int deletedCount = 0;
@@ -144,6 +145,7 @@ public class AuthorDAOImpl implements AuthorDAO {
 
 	@Override
 	public boolean update(AuthorVO vo) {
+		
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		int updatedCount = 0;
@@ -152,7 +154,7 @@ public class AuthorDAOImpl implements AuthorDAO {
 			conn = getConnection();
 			
 			// 실행 계획
-			String sql = "UPDATE author SET author_id=?, author_desc=? WHERE author_id=?";
+			String sql = "UPDATE author SET author_desc=? WHERE author_id=?";
 			pstmt = conn.prepareStatement(sql);
 			// 파라미티 바인딩
 			pstmt.setString(1, vo.getAuthorDesc());

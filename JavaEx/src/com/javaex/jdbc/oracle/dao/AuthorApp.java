@@ -9,8 +9,8 @@ public class AuthorApp {
 	public static void main(String[] args) {
 		//selectAll();
 		//insertAuthor();
-		//updateAuthor();
-		deleteAuthor();
+		updateAuthor();
+		//deleteAuthor();
 	}
 	
 	
