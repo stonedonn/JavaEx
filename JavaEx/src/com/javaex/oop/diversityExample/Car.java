@@ -1,0 +1,40 @@
+package com.javaex.oop.diversityExample;
+
+public class Car {
+	// 필드
+	Tire frontLeftTire = new Tire("앞 왼쪽", 6);
+	Tire frontRightTire = new Tire("앞 오른쪽", 2);
+	Tire backLeftTire = new Tire("뒤 왼쪽", 3);
+	Tire backRightTire = new Tire("뒤 오른쪽", 4);
+	
+	// 기본 생성자
+	public Car() {
+		
+	}
+	
+	// 메서드
+	int run() {
+		System.out.println(">>> 자동차가 달립니다. >>>");
+		if(!frontLeftTire.roll()) {
+			stop();
+			return 1;
+		}
+		if(!frontRightTire.roll()) {
+			stop();
+			return 2;
+		}
+		if(!backLeftTire.roll()) {
+			stop();
+			return 3;
+		}
+		if(!backRightTire.roll()) {
+			stop();
+			return 4;
+		}
+		return 0;
+	}
+	
+	void stop() {
+		System.out.println("xxx 자동차가 멈춥니다. xxx");
+	}
+}
